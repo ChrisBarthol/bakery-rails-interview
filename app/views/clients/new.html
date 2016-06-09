@@ -1,0 +1,9 @@
+<div class="text-center">
+  <h1>Create new Clients</h1>
+</div>
+<div>
+  <%= form_for(@client) do |f| %>
+    <%= render 'create_fields', f: f %>
+    <%= f.submit "Create a new Client", class: "btn btn-large btn-primary" %>
+  <% end %>
+</div>
