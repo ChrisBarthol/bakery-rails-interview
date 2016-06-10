@@ -11,11 +11,12 @@ class ClientsController < ApplicationController
   def create
     @client = Client.new(client_params)
     if @client.save
-      flash.now[:notice] = "#{@client.name.capitalize} has been created!"
+      flash.now[:notice] = "#{@client.first_name.capitalize} has been created!"
+      redirect_to clients_path
     else
       flash.now[:warning] = "No client has been created!"
+      render 'new'
     end
-    render 'new'
   end
 
   def destroy
@@ -30,6 +31,6 @@ class ClientsController < ApplicationController
 
   private
     def client_params
-      params.require(:client).permit(:name, :email)
+      params.require(:client).permit!
     end
 end
