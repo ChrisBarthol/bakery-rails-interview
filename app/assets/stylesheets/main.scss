@@ -1,0 +1,96 @@
+.main-splash {
+  background: url(bread.jpg) fixed top center;
+  position: relative;
+  height: 800px;
+  -webkit-background-size: color;
+  background-size: 100% 100%;
+  margin-top: -20px;
+}
+
+
+#main-text {
+  font-family: 'Crete Round', serif;
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  margin-left: 5px;
+  margin-right: 5px;
+  width:70%;
+  color: white;
+  font-size: 40px;
+}
+
+#main-text h1 {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 100px;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  flex-grow: 0%;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+
+.footerWrapper {
+  padding: 0 45px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: 'Catamaran', sans-serif;
+}
+
+.footerSocial, .footerLogo {
+  padding-top: 26px;
+  padding-bottom: 35px;
+  width: 33%;
+}
+
+.footerSocial ul li, .footerLogo  ul  li {
+  display: inline-block;
+  float: left;
+  margin-right: 20px;
+}
+
+.footerSocial p, .footerLogo p {
+  clear: both;
+  line-height: 24px;
+  float: left;
+}
+
+.footerSocial i, .footerLogo i {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background-size: contain;
+  font-size: 2em;
+  color: #fc9320;
+}
+
+.footerContact {
+  padding-top: 26px;
+  padding-bottom: 35px;
+  width: 33%;
+  color: #fc9320;
+}
+
+.footerLogo i{
+  float: right;
+  font-size: 3em;
+  margin-right:20px;
+}
+
+.veritcal-center {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  line-height: 150%;
+}
